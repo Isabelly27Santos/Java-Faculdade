@@ -8,7 +8,7 @@ public class UsaContaBancaria {
         ContaBancaria conta3 = new ContaBancaria("Carlos Oliveira", "54321-0", 1000.0);
         
         conta1.setNumero("12345-6");
-        conta1.setTitular("Joao da Silva");
+        conta1.setTitular("João da Silva");
         conta1.setSaldo(0.0);
 
         System.out.println(conta1.toString());
