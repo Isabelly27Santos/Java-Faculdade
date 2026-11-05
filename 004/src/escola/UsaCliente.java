@@ -9,14 +9,16 @@ public class UsaCliente {
     private static List<Cliente> clientes = new ArrayList<>();
     private static Scanner sc = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         int opcao;
         do {
+            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+
             System.out.println("\nMenu:\n");
             System.out.println("1. Cadastrar cliente");
             System.out.println("2. Listar clientes");
             System.out.println("3. Buscar cliente por nome");
-            System.out.println("0. Sair");
+            System.out.println("0. Sair\n");
             System.out.print("Escolha uma opção: ");
             opcao = sc.nextInt();
             sc.nextLine(); // Consumir a quebra de linha
@@ -24,17 +26,22 @@ public class UsaCliente {
             switch (opcao) {
                 case 1:
                     cadastrarCliente();
+                    pausar();
                     break;
                 case 2:
                     listarClientes();
+                    pausar();
                     break;
                 case 3:
                     buscarClientePorNome();
+                    pausar();
                     break;
                 case 0:
+                    pausar();
                     System.out.println("Saindo...");
                     break;
                 default:
+                    pausar();
                     System.out.println("Opção inválida!");
             }
         } while (opcao != 0);
@@ -79,8 +86,13 @@ public class UsaCliente {
         }
 
         if (!encontrado) {
-            System.out.println("Cliente não encontrado.");
+            System.out.println("\nCliente não encontrado.");
         }
+    }
+
+    private static void pausar() {
+    System.out.println("\nPressione ENTER para continuar...");
+    sc.nextLine();
     }
 }
 

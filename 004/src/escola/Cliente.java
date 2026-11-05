@@ -37,8 +37,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente [\nnome=" + nome + ", \nemail=" + email + ", \ntelefone=" + telefone + "]";
+        return "nome=" + nome + ", \nemail=" + email + ", \ntelefone=" + telefone + "\n\n";
     }
 
-    
 }
