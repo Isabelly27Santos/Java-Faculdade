@@ -1,4 +1,4 @@
-package contas;
+package contas1;
 
 public class Banco {
   

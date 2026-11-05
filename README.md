@@ -1,2 +1,0 @@
-# Java-Faculdade
-Repositório com exercícios, atividades práticas e projetos desenvolvidos durante as aulas de Java na faculdade. Contém códigos e exemplos usados para estudar e praticar conceitos fundamentais da linguagem, como lógica de programação, orientação a objetos, classes, objetos, métodos, construtores, encapsulamento, herança e outros recursos do Java.
