@@ -1,6 +1,5 @@
 package aula09;
 
-public class Pessoa {
  
     public abstract class Pessoa {
     
@@ -11,11 +10,15 @@ public class Pessoa {
             return nome;
         }
         
+         public Pessoa() {  //permite criar as classes filhas com herança
+        }
+
         public Pessoa(String nome, int idade, String cpf) {
             this.nome = nome;
             this.idade = idade;
             this.cpf = cpf;
         }
+
 
         public void setNome(String nome) {
             this.nome = nome;
@@ -33,7 +36,13 @@ public class Pessoa {
             this.cpf = cpf;
         }
 
+        @Override
+        public String toString() {
+            return "Pessoa [nome=" + nome + ", idade=" + idade + ", cpf=" + cpf + "]";
+        }
+
+
+        
         
     }
 
-}
