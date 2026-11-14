@@ -1,6 +1,17 @@
 package aula09;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import aula10.Medico;
+import aula10.Paciente;
+import aula10.Util;
+
 public class Clinica {
+
+    static Scanner scanner = new Scanner(System.in);
+    static List<Paciente> pacientes = new ArrayList<>();
 
     public static void main(String[] args) {
         Paciente paciente = new Paciente();

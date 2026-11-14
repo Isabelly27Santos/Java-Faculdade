@@ -1,5 +1,7 @@
 package aula09;
 
+import aula10.Pessoa;
+
 public class Medico extends Pessoa {
 
     private String crm;
